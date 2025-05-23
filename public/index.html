@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Hadi Royan Firdaus</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Di dalam <head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <style>
+      .project-card:hover .project-overlay {
+        opacity: 1;
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #3b82f6;
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #aaa;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+        }
+        to {
+          box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+        }
+      }
+
+      .social-hover:hover {
+        transform: translateY(-3px);
+        transition: all 0.3s ease;
+      }
+
+      .bg-gradient-footer {
+        background: linear-gradient(
+          135deg,
+          #374151 0%,
+          #4b5563 50%,
+          #6b7280 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="sticky-top top-0 bg-white shadow-md">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-2xl font-bold text-blue-500">
+            <img src="images/logo.png" alt="" class="w-10 h-10" />
+          </a>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-500 hover:text-blue-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-gray-700 hover:text-blue-600"
+              >Home</a
+            >
+            <a href="#about" class="nav-link text-gray-700 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="#education"
+              class="nav-link text-gray-700 hover:text-blue-600"
+              >Education</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-700 hover:text-blue-600"
+              >Projects</a
+            >
+            <a
+              href="#journey"
+              class="nav-link text-gray-700 hover:text-blue-600"
+              >Journey</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="py-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white"
+    >
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 flex flex-col items-start">
+          <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+            Hello, I'm
+            <span class="text-yellow-300">Hadi Royan</span>
+          </h1>
+          <p class="text-xl mb-8">Software Developer</p>
+          <div class="flex flex-wrap gap-4">
+            <!-- <a
+              href="#contact"
+              class="bg-white text-blue-600 hover:bg-blue-100 transition-colors px-6 py-3 rounded-lg font-medium"
+              >Get In Touch</a
+            > -->
+            <a
+              href="#projects"
+              class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 transition-colors px-6 py-3 rounded-lg font-medium"
+              >View My Work</a
+            >
+          </div>
+          <div class="flex space-x-4 mt-8">
+            <a
+              href="https://github.com/hadiroyan"
+              class="text-white hover:text-yellow-300 transition-colors"
+            >
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hadi-royan/"
+              class="text-white hover:text-yellow-300 transition-colors"
+            >
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+          <img
+            src="/public/images/profile/1.jpg"
+            alt="Profile"
+            class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">About Me</h2>
+          <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+          <p class="text-gray-600 text-center max-w-3xl">
+            Get to know me better
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <div class="md:w-1/3">
+            <img
+              src="/public/images/profile/2.jpg"
+              alt="About me"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
+            <p class="text-gray-600 mb-6">
+              I am an informatics student focusing on software development
+              across multiple platforms. My technical journey has led me to
+              specialize in Flutter and Kotlin for creating responsive Android
+              applications, complemented by my proficiency with Spring Framework
+              for backend systems.
+            </p>
+
+            <p class="text-gray-600 mb-6">
+              Through academic courses and independent projects, I have applied
+              my knowledge to solve real-world problems and build functional and
+              efficient software solutions. I am eager to enhance my practical
+              skills in a professional environment, contribute to innovative
+              projects and gain valuable real-world experience.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div>
+                <p class="mb-2">
+                  <strong>Name:</strong> Muhammad Hadi Royan Firdaus
+                </p>
+                <p class="mb-2"><strong>Email:</strong> hadiroyan3@gmail.com</p>
+              </div>
+              <div>
+                <p class="mb-2"><strong>Location:</strong> Bogor, Indonesia</p>
+                <p class="mb-2"><strong>Education:</strong> Informatics</p>
+              </div>
+            </div>
+
+            <!-- <a
+              href="#"
+              class="bg-blue-600 hover:bg-blue-700 transition-colors text-white px-6 py-3 rounded-lg font-medium inline-flex items-center"
+            >
+              <span>Download CV</span>
+              <i class="fas fa-download ml-2"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certification Section -->
+    <section id="education" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 relative">
+          Education & Certification
+          <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Education -->
+          <div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-primary transition-all duration-300 hover:shadow-xl"
+            >
+              <h3
+                class="text-2xl font-semibold mb-6 flex items-center text-secondary"
+              >
+                <span
+                  class="p-2 rounded-full bg-primary/10 text-primary mr-3 flex items-center justify-center"
+                >
+                  <i class="fas fa-graduation-cap text-xl"></i>
+                </span>
+                Education
+              </h3>
+
+              <div class="relative pl-8 border-l-2 border-primary/40 mt-8">
+                <!-- Education 1 -->
+                <div class="mb-10 relative">
+                  <div
+                    class="absolute -left-[2.65rem] top-0 flex items-center justify-center"
+                  >
+                    <div
+                      class="w-8 h-8 rounded-full bg-white flex items-center justify-center z-10 shadow-md border-2 border-primary"
+                    >
+                      <i class="fas fa-graduation-cap text-primary text-sm"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col">
+                      <h4 class="text-lg font-bold text-secondary">
+                        Bachelor Degree, Informatics
+                      </h4>
+                      <p class="text-primary text-sm font-medium">
+                        University of Singaperbangsa Karawang
+                      </p>
+
+                      <div class="text-gray-700 mt-1 flex items-center text-sm">
+                        <i class="far fa-calendar-alt mr-2 text-primary"></i>
+                        <span>2021 - 2025</span>
+                      </div>
+
+                      <p class="mt-1 text-gray-700 text-sm font-medium">
+                        Karawang, Indonesia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="mb-6 relative">
+                  <div
+                    class="absolute -left-[2.65rem] top-0 flex items-center justify-center"
+                  >
+                    <div
+                      class="w-8 h-8 rounded-full bg-white flex items-center justify-center z-10 shadow-md border-2 border-primary"
+                    >
+                      <i class="fas fa-school text-primary text-sm"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col">
+                      <h4 class="text-lg font-bold text-secondary">
+                        Senior High School, Science Major
+                      </h4>
+                      <p class="text-primary text-sm font-medium">
+                        MA Negeri 1 Kota Bogor
+                      </p>
+
+                      <div class="text-gray-700 mt-1 flex items-center text-sm">
+                        <i class="far fa-calendar-alt mr-2 text-primary"></i>
+                        <span>2018 - 2021</span>
+                      </div>
+
+                      <p class="mt-1 text-gray-700 text-sm font-medium">
+                        Bogor, Indonesia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification -->
+          <div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-primary transition-all duration-300 hover:shadow-xl h-full"
+            >
+              <h3
+                class="text-2xl font-semibold mb-8 flex items-center text-secondary"
+              >
+                <span
+                  class="p-3 rounded-full bg-primary/10 text-primary mr-3 flex items-center justify-center"
+                >
+                  <i class="fas fa-certificate text-xl"></i>
+                </span>
+                Certification
+              </h3>
+
+              <div class="relative overflow-hidden">
+                <!-- Tombol scroll atas -->
+                <button
+                  id="scroll-top"
+                  class="absolute top-0 right-4 z-10 bg-white/80 text-primary hover:text-secondary p-1 rounded-full shadow-md hidden"
+                >
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+
+                <!-- Konten sertifikasi -->
+                <div
+                  class="space-y-6 overflow-y-auto max-h-[250px] pr-2 scroll-smooth custom-scrollbar"
+                  id="certification-container"
+                >
+                  <!-- Sertifikasi diisi oleh JavaScript -->
+                  <div id="certification-list" class="space-y-6"></div>
+                </div>
+
+                <!-- Tombol scroll bawah -->
+                <button
+                  id="scroll-bottom"
+                  class="absolute bottom-0 right-4 z-10 bg-white/80 text-primary hover:text-secondary p-1 rounded-full shadow-md"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="journey" class="px-4 pt-4 pb-10 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">My Journey</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+          <p class="text-gray-600 mt-4">My path and key achievements</p>
+        </div>
+
+        <div class="relative min-h-[800px]">
+          <div
+            class="absolute left-8 xl:left-1/2 transform xl:-translate-x-px top-0 bottom-8 w-0.5 bg-gray-300"
+          ></div>
+
+          <!-- Container untuk timeline items -->
+          <div
+            id="journey-container"
+            class="relative z-10 space-y-12 pb-16"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">My Projects</h2>
+          <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+          <p class="text-gray-600 text-center max-w-3xl">
+            A selection of my recent work
+          </p>
+        </div>
+
+        <!-- Projects diisi oleh JavaScript -->
+        <div
+          id="project-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-footer text-white py-12 relative">
+      <!-- Decorative top border -->
+      <div
+        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3b82f6] via-purple-500 to-pink-500"
+      ></div>
+
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0"
+        >
+          <!-- Brand Section -->
+          <div class="text-center lg:text-left">
+            <h2 class="text-3xl font-bold mb-2 animate-float">
+              <span class="text-primary">Port</span>folio
+            </h2>
+            <p class="text-gray-300 mb-4">© 2025 Muhammad Hadi Royan Firdaus</p>
+            <div
+              class="flex items-center justify-center lg:justify-start text-gray-300"
+            >
+              <span>Made with</span>
+              <i class="fas fa-heart text-[#ef4444] mx-2 animate-heartbeat"></i>
+              <span>in Indonesia</span>
+              <i class="fas fa-flag text-red-500 ml-2"></i>
+            </div>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="flex flex-col items-center lg:items-end space-y-4">
+            <h3 class="text-lg font-semibold text-gray-200 mb-2">
+              Let's Connect
+            </h3>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-4">
+              <!-- GitHub -->
+              <a
+                href="https://github.com/hadiroyan"
+                target="_blank"
+                class="group bg-gray-700 hover:bg-gray-800 p-3 rounded-full social-hover transition-all duration-300"
+              >
+                <i
+                  class="fab fa-github text-xl group-hover:text-primary transition-colors duration-300"
+                ></i>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/hadi-royan"
+                target="_blank"
+                class="group bg-gray-700 hover:bg-blue-600 p-3 rounded-full social-hover transition-all duration-300"
+              >
+                <i
+                  class="fab fa-linkedin-in text-xl group-hover:text-white transition-colors duration-300"
+                ></i>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/hadiroyan3/"
+                target="_blank"
+                class="group bg-gray-700 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 p-3 rounded-full social-hover transition-all duration-300"
+              >
+                <i
+                  class="fab fa-instagram text-xl group-hover:text-white transition-colors duration-300"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Alternative: Social Links-->
+            <div class="hidden lg:flex flex-col space-y-2 mt-6">
+              <a
+                href="https://github.com/hadiroyan"
+                target="_blank"
+                class="flex items-center text-gray-300 hover:text-[#3b82f6] transition-colors duration-300 group"
+              >
+                <i
+                  class="fab fa-github mr-3 group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <span class="text-sm">github.com/hadiroyan</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hadi-royan"
+                target="_blank"
+                class="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300 group"
+              >
+                <i
+                  class="fab fa-linkedin mr-3 group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <span class="text-sm">linkedin.com/in/hadi-royan/</span>
+              </a>
+              <a
+                href="https://www.instagram.com/hadiroyan3/"
+                target="_blank"
+                class="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-300 group"
+              >
+                <i
+                  class="fab fa-instagram mr-3 group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <span class="text-sm">@hadiroyan3</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="mt-8 pt-6 border-t border-gray-600 text-center">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          >
+            <p class="text-gray-400 text-sm">
+              Thank you for visiting my portfolio
+            </p>
+            <div class="flex space-x-6 text-sm">
+              <a
+                href="#about"
+                class="hover:text-white text-gray-400 transition-colors duration-300"
+                >About</a
+              >
+              <a
+                href="#project"
+                class="hover:text-white text-gray-400 transition-colors duration-300"
+                >Project</a
+              >
+              <a href="#" class="text-transparent">Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div class="absolute bottom-0 right-0 opacity-10">
+        <i class="fas fa-code text-8xl"></i>
+      </div>
+      <div class="absolute top-4 left-4 opacity-5">
+        <i class="fas fa-laptop-code text-6xl"></i>
+      </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>
