@@ -5,7 +5,7 @@ const certifications = [
     issuedDate: "January 2025",
     id: "7EVZNEPVY3",
     credentialUrl: "https://dev.id/certificate/verify/7EVZNEPVY3",
-    logo: "images/logo-cert-company/logo-dev-cert.jpg",
+    logo: "public/images/logo-cert-company/logo-dev-cert.jpg",
   },
   {
     title: "Certified Application Security Engineer - Java",
@@ -14,7 +14,7 @@ const certifications = [
     id: "ECC2819643507",
     credentialUrl:
       "https://aspen.eccouncil.org/VerifyBadge?type=certification&a=g2ojapKW7y6r/Ylg5qAMinlhOSSBvYhcimSSCDTSSxw=",
-    logo: "images/logo-cert-company/logo-ec-council.png",
+    logo: "public/images/logo-cert-company/logo-ec-council.png",
   },
   {
     title: "Flutter Shop App | State Management BLoC | Backend [2024]",
@@ -22,7 +22,7 @@ const certifications = [
     issuedDate: "May 2024",
     id: "UC-35b90092-58a1-49b2-8741-ad51182d9c25",
     credentialUrl: "https://ude.my/UC-35b90092-58a1-49b2-8741-ad51182d9c25",
-    logo: "images/logo-cert-company/logo-udemy.svg",
+    logo: "public/images/logo-cert-company/logo-udemy.svg",
   },
   {
     title: "Belajar Membuat Aplikasi Flutter untuk Pemula",
@@ -30,7 +30,7 @@ const certifications = [
     issuedDate: "January 2024",
     id: "GRX5Q4KDRZ0M",
     credentialUrl: "https://www.dicoding.com/certificates/GRX5Q4KDRZ0M",
-    logo: "images/logo-cert-company/logo-dicoding.jpeg",
+    logo: "public/images/logo-cert-company/logo-dicoding.jpeg",
   },
   {
     title: "Belajar Membuat Aplikasi Android dengan Jetpack Compose",
@@ -38,7 +38,7 @@ const certifications = [
     issuedDate: "Oct 2023",
     id: "07Z68715JXQR",
     credentialUrl: "https://www.dicoding.com/certificates/07Z68715JXQR",
-    logo: "images/logo-cert-company/logo-dicoding.jpeg",
+    logo: "public/images/logo-cert-company/logo-dicoding.jpeg",
   },
   {
     title: "Kotlin for Java Developers",
@@ -46,7 +46,7 @@ const certifications = [
     issuedDate: "April 2022",
     id: "HD3H4HZCZFNJ",
     credentialUrl: "https://coursera.org/verify/HD3H4HZCZFNJ",
-    logo: "images/logo-cert-company/logo-coursera-2.svg",
+    logo: "public/images/logo-cert-company/logo-coursera-2.svg",
   },
 
   {
@@ -55,7 +55,7 @@ const certifications = [
     issuedDate: "August 2021",
     id: "F4F36EAD59A6",
     credentialUrl: "https://www.hackerrank.com/certificates/f4f36ead59a6",
-    logo: "images/logo-cert-company/logo-hackerrank.png",
+    logo: "public/images/logo-cert-company/logo-hackerrank.png",
   },
 ];
 
