@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- Di dalam <head> -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
@@ -101,7 +101,7 @@
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
-    <header class="sticky-top top-0 bg-white shadow-md">
+    <header class="sticky top-0 bg-white shadow-md z-50">
       <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           <a href="#" class="text-2xl font-bold text-blue-500">
@@ -112,35 +112,89 @@
           <div class="md:hidden">
             <button
               id="mobile-menu-button"
-              class="text-gray-500 hover:text-blue-600 focus:outline-none"
+              class="text-gray-500 hover:text-blue-600 focus:outline-none p-2"
             >
-              <i class="fas fa-bars text-xl"></i>
+              <i id="menu-icon" class="fas fa-bars text-xl"></i>
             </button>
           </div>
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-8">
-            <a href="#home" class="nav-link text-gray-700 hover:text-blue-600"
+            <a
+              href="#home"
+              class="nav-link text-gray-700 hover:text-blue-600 transition-colors"
               >Home</a
             >
-            <a href="#about" class="nav-link text-gray-700 hover:text-blue-600"
+            <a
+              href="#about"
+              class="nav-link text-gray-700 hover:text-blue-600 transition-colors"
               >About</a
             >
             <a
               href="#education"
-              class="nav-link text-gray-700 hover:text-blue-600"
+              class="nav-link text-gray-700 hover:text-blue-600 transition-colors"
               >Education</a
             >
             <a
               href="#projects"
-              class="nav-link text-gray-700 hover:text-blue-600"
+              class="nav-link text-gray-700 hover:text-blue-600 transition-colors"
               >Projects</a
             >
             <a
               href="#journey"
-              class="nav-link text-gray-700 hover:text-blue-600"
+              class="nav-link text-gray-700 hover:text-blue-600 transition-colors"
               >Journey</a
             >
+          </div>
+        </div>
+
+        <!-- Mobile Menu - Floating dropdown -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t-4 border-blue-500 z-40 backdrop-blur-sm"
+        >
+          <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col space-y-1">
+              <a
+                href="#home"
+                class="group flex items-center text-gray-700 px-1 py-1"
+              >
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                <span class="font-medium">Home</span>
+              </a>
+              <a
+                href="#about"
+                class="group flex items-center text-gray-700 px-1 py-1"
+              >
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                <span class="font-medium">About</span>
+              </a>
+              <a
+                href="#education"
+                class="group flex items-center text-gray-700 px-1 py-1"
+              >
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                <span class="font-medium">Education</span>
+              </a>
+              <a
+                href="#projects"
+                class="group flex items-center text-gray-700 px-1 py-1"
+              >
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                <span class="font-medium">Projects</span>
+              </a>
+              <a
+                href="#journey"
+                class="group flex items-center text-gray-700 px-1 py-1"
+              >
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                <span class="font-medium">Journey</span>
+              </a>
+            </div>
+            <!-- Decorative bottom gradient -->
+            <div
+              class="mt-4 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"
+            ></div>
           </div>
         </div>
       </nav>
@@ -402,9 +456,9 @@
     </section>
 
     <!-- Journey -->
-    <section id="journey" class="px-4 pt-4 pb-10 bg-white">
+    <section id="journey" class="px-4 pt-20 pb-10 bg-white">
       <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-4xl font-bold text-gray-800 mb-4">My Journey</h2>
           <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
           <p class="text-gray-600 mt-4">My path and key achievements</p>
