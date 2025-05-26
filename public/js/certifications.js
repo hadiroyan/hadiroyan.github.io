@@ -73,7 +73,7 @@ export function renderCertifications() {
         <div class="flex flex-col">
           <h4 class="text-lg font-semibold text-secondary">${cert.title}</h4>
           <p class="text-primary font-medium">${cert.issuer}</p>
-          <p class="text-gray-600 text-sm mt-1">Diterbitkan: ${cert.issuedDate}</p>
+          <p class="text-gray-600 text-sm mt-1">Issued: ${cert.issuedDate}</p>
           <p class="text-gray-600 text-sm">ID: ${cert.id}</p>
         </div>
 

@@ -8,7 +8,9 @@ const journeys = [
     bgColor: "blue",
     items: [
       "Learn fundamental skills in SQL, Java, and Object Oriented Programming",
-      "Built Node Controller architecture, and Spring Boot framework with Object Relational Mapping usage",
+      "Learn application development using JDBC, MVC architecture, and Spring Boot framework with ORM",
+      "Studied advanced topics including System Architecture, RESTful Web Services, and Web Design",
+      "Achieved Certified Application Security Engineer Java (CASE Java)",
     ],
   },
   {
@@ -21,8 +23,9 @@ const journeys = [
     subtitle: "Led by Google, Tokopedia, Gojek, & Traveloka",
     items: [
       "Learn Android development, Kotlin programming, Android Studio",
-      "Focus on developing secure applications",
-      "Collaborated in Cloud-based development with team",
+      "Learn skills in modern UI development using Jetpack Compose",
+      "Learn SOLID principles and best practices for scalable software design",
+      " Implement skills in a capstone project in the form of a Warung Pintar application.",
     ],
   },
   {
