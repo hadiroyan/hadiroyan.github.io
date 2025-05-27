@@ -1,11 +1,13 @@
 import { renderCertifications } from "./certifications.js";
 import { renderProjects } from "./projects.js";
 import { renderjourney } from "./journey.js";
+import { renderTechStack } from "./skills.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderCertifications();
   renderProjects();
   renderjourney();
+  renderTechStack();
 
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
