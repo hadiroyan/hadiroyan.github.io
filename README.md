@@ -1,8 +1,15 @@
 # 🧑‍💻 Personal Web Portfolio
 
-This is a simple **personal portfolio website** project built using **HTML**, **JavaScript**, and **Tailwind CSS**. This website features various sections that represent my profile, educational background, experience, and projects that I have created.
+This is a simple **personal portfolio website** project built using **Vue js 3**, **Vite**, and **Tailwind CSS**.
+This website features various sections that represent my profile, educational background, experience, and projects that I have created.
 
 ---
+
+## 💡 Technology Used
+
+- **Vue js**
+- **Vite**
+- **Tailwind CSS**
 
 ## 🚀 Website Features
 
@@ -14,40 +21,20 @@ This website consists of several main _sections_:
 - **📈 Journey**
 - **💼 Projects**
 
-## 💡 Technology Used
-
-- **HTML5**
-- **Tailwind CSS**
-- **JavaScript**
-- **Node.js**
-
 ---
 
 ## 🛠️ How to Run
 
 ### 1. Clone repository
 
-### 2. Install dependency
+### 2. Install dependency & Run
 
 ```bash
 npm install
+npm run dev
 ```
 
-### 3.2 Watch Tailwind CSS
-
-```bash
-npm run watch
-```
-
-### 3.2 Build Tailwind CSS
-
-```bash
-npm run build
-```
-
-### 4. Open public/index.html in browser
-
----
+Your webiste will be run at: http://localhost:5173
 
 ## 📄 License
 
