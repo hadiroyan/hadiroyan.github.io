@@ -52,8 +52,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import menuButton from '../assets/icons/menu_24dp-black.svg'
-import closeButton from '../assets/icons/close_24dp-black.svg'
+import menuButton from '../../assets/icons/menu_24dp-black.svg'
+import closeButton from '../../assets/icons/close_24dp-black.svg'
 
 const isMobileMenuOpen = ref(false)
 

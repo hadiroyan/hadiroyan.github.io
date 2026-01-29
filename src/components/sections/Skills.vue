@@ -63,8 +63,8 @@
 </template>
 
 <script setup>
-import { skills } from '../data/skills';
-import { tools } from '../data/skills';
+import { skills } from '../../data/skills';
+import { tools } from '../../data/skills';
 </script>
 
 <style scoped></style>

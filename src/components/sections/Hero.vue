@@ -28,11 +28,11 @@
                     </a>
                 </div>
                 <div class="flex space-x-4 mt-8">
-                    <a href="https://github.com/hadiroyan"
+                    <a href="https://github.com/hadiroyan" target="_blank"
                         class="hover:scale-115 transform transition-all duration-300">
                         <i class="fab fa-github text-4xl"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/hadi-royan/"
+                    <a href="https://www.linkedin.com/in/hadi-royan/" target="_blank"
                         class="text-blue-600 hover:scale-115 transform transition-all duration-300">
                         <i class="fab fa-linkedin text-4xl"></i>
                     </a>

@@ -37,9 +37,9 @@
 </template>
 
 <script setup>
-import ExperienceCard from './ExperienceCard.vue';
-import PublicationCard from './PublicationCard.vue';
-import { experiences } from '../data/journey';
-import { publications } from '../data/journey';
-import JourneyHeader from './JourneyHeader.vue';
+import { experiences } from '../../data/journey';
+import { publications } from '../../data/journey';
+import JourneyHeader from '../cards/JourneyHeader.vue';
+import ExperienceCard from '../cards/ExperienceCard.vue';
+import PublicationCard from '../cards/PublicationCard.vue';
 </script>

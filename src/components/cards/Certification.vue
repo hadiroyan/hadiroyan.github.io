@@ -14,7 +14,7 @@
 
             <!-- Certification List -->
             <div ref="containerRef" @scroll="checkScrollPosition"
-                class="space-y-6 overflow-y-auto max-h-[250px] pr-2 scroll-smooth custom-scrollbar">
+                class="space-y-6 overflow-y-auto max-h-62.5 pr-2 scroll-smooth custom-scrollbar">
                 <div v-for="cert in certifications" :key="cert.id"
                     class="relative border-l-4 border-primary pl-4 py-3 hover:bg-gray-100 transition-all">
                     <div class="flex justify-between items-stretch">
@@ -52,7 +52,7 @@
 <script setup>
 
 import { ref, onMounted } from "vue";
-import { certifications } from "../data/certification";
+import { certifications } from "../../data/certification";
 
 const containerRef = ref(null);
 const showScrollTop = ref(false);

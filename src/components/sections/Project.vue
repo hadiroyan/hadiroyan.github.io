@@ -56,7 +56,7 @@
 </template>
 
 <script setup>
-import { projects } from '../data/projects';
+import { projects } from '../../data/projects';
 </script>
 
 <style scoped></style>

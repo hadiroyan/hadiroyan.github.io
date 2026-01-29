@@ -82,7 +82,7 @@
 </template>
 
 <script setup>
-import { educations } from '../data/education';
-import { trainings } from '../data/education';
+import { educations } from '../../data/education';
+import { trainings } from '../../data/education';
 
 </script>
