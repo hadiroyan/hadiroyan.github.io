@@ -1,64 +1,61 @@
 <template>
-    <section id="skills" class="py-20 px-6 bg-linear-to-br from-blue-900 via-blue-700 to-blue-800">
-        <div class="container mx-auto max-w-7xl">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-bold text-white mb-4 animate-float">
-                    Tech Stack
-                </h2>
-                <p class="text-blue-100 text-lg max-w-2xl mx-auto">
-                    Technologies and tools I use to build amazing applications
+    <section id="skills" class="min-h-screen bg-gray-50 p-4 md:py-20">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-8">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                    Skills & Technical Expertise
+                </h1>
+                <p class="text-sm text-gray-600">
+                    Technologies, tools, and frameworks I work with
                 </p>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full"></div>
             </div>
 
-            <!-- Content -->
-            <div id="tech-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div v-for="(skill, index) in skills" :key="index" class="h-full">
-                    <div class="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 border 
-                        border-white/20 hover:border-white transition-all duration-500 
-                        hover:scale-105 hover:shadow-xl h-full flex flex-col">
+            <!-- Technical Expertise & Key Tools -->
+            <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mb-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-code text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-900">Technical Expertise & Key Tools</h2>
+                        <p class="text-sm text-gray-500">Core technologies and frameworks</p>
+                    </div>
+                </div>
 
-                        <div class="text-center mb-6">
-                            <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                                {{ skill.icon }}
-                            </div>
-                            <h3 class="text-xl font-semibold text-white/70 mb-2 group-hover:text-white 
-                                transition-colors duration-300">
-                                {{ skill.category }}
-                            </h3>
-                            <div class="h-1 w-16 bg-cyan-400 mx-auto rounded-full group-hover:w-24 
-                                transition-all duration-300">
-                            </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div v-for="category in skills" :key="category.name"
+                        class="bg-white rounded-lg border border-gray-200 p-5">
+                        <div class="flex items-center gap-2 mb-4">
+                            <h3 class="font-semibold text-gray-900">{{ category.name }}</h3>
                         </div>
-
-                        <div class="space-y-4 grow">
-                            <div v-for="(tech, techIndex) in skill.technologies" :key="techIndex" class="tech-item flex items-center space-x-3 p-3 rounded-lg bg-white/5 
-                            hover:bg-white/10 transition-all duration-300">
-
-                                <div class="w-8 h-8 shrink-0 flex items-center justify-center">
-                                    <img :src="tech.icon" :alt="tech.name" :class="[
-                                        'w-8 h-8 object-contain hover:scale-110 transition-transform duration-300',
-                                        tech.filter || ''
-                                    ]" />
-                                </div>
-                                <span
-                                    class="text-blue-100 font-medium group-hover:text-white transition-colors duration-300">
-                                    {{ tech.name }}
-                                </span>
-
-                            </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span v-for="skill in category.skills" :key="skill"
+                                class="inline-flex items-center gap-1.5 px-3 py-1 bg-gray-50 border border-gray-200 rounded-md text-sm text-gray-700">
+                                {{ skill }}
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer skills -->
-            <div class="mt-16 text-center">
-                <div class="inline-flex items-center space-x-2 text-blue-200">
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                    <span class="text-sm">Always learning and exploring new technologies</span>
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+            <!-- Development Environment & Tools -->
+            <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mb-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-tools text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900">Development Environment & Tools</h3>
+                        <p class="text-sm text-gray-500">Version control and collaboration</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div v-for="(tool, index) in tools" :key="index"
+                        class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                        <span class="text-sm font-medium text-gray-700">{{ tool }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,6 +64,7 @@
 
 <script setup>
 import { skills } from '../data/skills';
+import { tools } from '../data/skills';
 </script>
 
 <style scoped></style>

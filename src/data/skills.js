@@ -1,67 +1,23 @@
 export const skills = [
   {
-    category: "Databases",
-    icon: "🗄️",
-    technologies: [
-      {
-        name: "MySQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      },
-    ],
+    name: "Backend Development",
+    skills: ["Java", "Spring Boot", "Spring MVC", "Spring JPA", "RESTfull API"],
   },
   {
-    category: "Backend",
-    icon: "⚙️",
-    technologies: [
-      {
-        name: "Spring Framework",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-      },
-      {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-      {
-        name: "Express.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        filter: "filter invert",
-      },
-    ],
+    name: "Databases",
+    skills: ["MySQL", "PostgreSQL", "Room Database"],
   },
   {
-    category: "Mobile Development",
-    icon: "📱",
-    technologies: [
-      {
-        name: "Android (Kotlin)",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-      },
-      {
-        name: "Flutter",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-      },
-    ],
+    name: "Frontend & Mobile",
+    skills: ["Android (Kotlin)", "Flutter (Android)", "Spring Thymeleaf"],
   },
-  {
-    category: "Cloud & Tools",
-    icon: "☁️ 🛠️",
-    technologies: [
-      {
-        name: "AWS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-      },
-      {
-        name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-      {
-        name: "Postman",
-        icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-      },
-    ],
-  },
+];
+
+export const tools = [
+  "Git / Github",
+  "Postman",
+  "Maven",
+  "Gradle",
+  "VS Code",
+  "Android Studio",
 ];

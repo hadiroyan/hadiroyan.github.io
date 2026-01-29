@@ -1,6 +1,6 @@
 <template>
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col items-center mb-12">
                 <h2 class="text-3xl font-bold mb-2">About Me</h2>
                 <div class="w-20 h-1 bg-blue-600 mb-6"></div>
@@ -19,7 +19,7 @@
                         passion for
                         software development and
                         building digital solutions. My technical expertise focuses on software development,
-                        particularly Android application development using Java and Kotlin, as well as backend system
+                        particularly Android application development using Kotlin and Flutter, as well as backend system
                         development with the Spring Framework.
                     </p>
                     <p class="text-gray-600 mb-6 text-justify">

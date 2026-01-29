@@ -1,28 +1,40 @@
 <template>
-    <section id="home" class="py-30 bg-linear-to-br from-blue-800 via-blue-600 to-blue-800 text-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <section id="home" class="pt-25 pb-15 bg-gray-100 to-blue-800 text-gray-700">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 flex flex-col items-start ">
-                <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">
                     Hello, I'm
-                    <span class="text-yellow-300">Hadi Royan</span>
+                    <span class="text-blue-600">Hadi Royan</span>
                 </h1>
-                <p class="text-xl mb-8">Software Developer</p>
+                <p class="text-2xl lg:text-3xl font-semibold mb-4">Software Developer</p>
+                <div class="text-lg mb-8">
+                    <p>
+                        Android & Backend Developer specializing in Java, Kotlin, and Spring Boot.
+                    </p>
+                    <p>
+                        Passionate about building scalable systems and continuously improving through real-world
+                        projects.
+                    </p>
+                </div>
                 <div class="flex flex-wrap gap-4">
-                    <!-- <a href="#contact"
-                        class="bg-white text-blue-600 hover:bg-blue-100 transition-colors px-6 py-3 rounded-lg font-medium">Get
-                        In Touch</a> -->
-                    <a href="#projects"
-                        class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 transition-colors px-6 py-3 rounded-lg font-medium">
-                        View My Work</a>
+
+                    <a href="#project"
+                        class="bg-white text-blue-600 hover:bg-blue-700 hover:text-white transition-colors px-6 py-3 rounded-lg shadow-sm font-medium">
+                        View My Work
+                    </a>
+                    <a href="#contact"
+                        class="bg-blue-600 text-white hover:bg-blue-700 hover:text-white transition-colors px-6 py-3 rounded-lg shadow-sm font-medium">
+                        Get In Touch
+                    </a>
                 </div>
                 <div class="flex space-x-4 mt-8">
                     <a href="https://github.com/hadiroyan"
-                        class="inline-block transform transition-all duration-300 ease-in-out hover:scale-115 opacity-95 hover:opacity-100">
-                        <img src="../assets/icons/github-white.svg" class="w-8" alt="GitHub">
+                        class="hover:scale-115 transform transition-all duration-300">
+                        <i class="fab fa-github text-4xl"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/hadi-royan/"
-                        class="inline-block transform transition-all duration-300 ease-in-out hover:scale-115 opacity-95 hover:opacity-100">
-                        <img src="../assets/icons/linkedin-white.svg" class="w-8" alt="LinkedIn">
+                        class="text-blue-600 hover:scale-115 transform transition-all duration-300">
+                        <i class="fab fa-linkedin text-4xl"></i>
                     </a>
                 </div>
             </div>
@@ -31,7 +43,26 @@
                     class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl" />
             </div>
         </div>
+
     </section>
+    <div class="bg-white hidden md:flex justify-around px-14 py-6">
+        <div class="flex gap-2 items-center">
+            <i class="fa-brands fa-java bg-gray-100 text-blue-600 text-xl px-2 py-1 rounded"></i>
+            <span class="font-semibold">Java & Spring-boot</span>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i class="fa-brands fa-android bg-gray-100 text-blue-600 text-lg px-2 py-1 rounded"></i>
+            <span class="font-semibold">Android</span>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-database bg-gray-100 text-blue-600 text-lg px-2 py-1 rounded"></i>
+            <span class="font-semibold">MySQL</span>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i class="fa-brands fa-git-alt bg-gray-100 text-blue-600 text-lg px-2 py-1 rounded"></i>
+            <span class="font-semibold">Git</span>
+        </div>
+    </div>
 </template>
 
 <script setup>

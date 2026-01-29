@@ -1,10 +1,19 @@
 <template>
     <header class="sticky top-0 bg-white shadow-xs z-50">
         <nav class="px-6 py-4">
-            <div class="flex items-center justify-end mx-auto px-2">
+            <div class="flex items-center justify-between mx-auto px-10">
                 <!-- <a href="#" class="text-2xl font-bold text-blue-500">
                     <img src="/images/logo.png" alt="Logo" class="w-10 h-10">
                 </a> -->
+                <div class="shrink-0">
+                    <a href="#" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                        <div
+                            class="text-xs bg-blue-600 rounded-sm p-1 flex items-center justify-center text-white font-bold">
+                            HR
+                        </div>
+                        <span class="font-medium">Hadi Royan</span>
+                    </a>
+                </div>
 
                 <!-- Mobile navigation button -->
                 <div class="md:hidden">
@@ -14,7 +23,7 @@
                 </div>
 
                 <!-- Desktop navigation -->
-                <div class="hidden md:flex space-x-8 text-lg">
+                <div class="hidden md:flex space-x-4 text-md">
                     <a v-for="item in menuItems" :key="item.href" :href="item.href"
                         class="nav-link text-gray-700 hover:text-blue-600 transition-colors">
                         {{ item.label }}
@@ -49,12 +58,13 @@ import closeButton from '../assets/icons/close_24dp-black.svg'
 const isMobileMenuOpen = ref(false)
 
 const menuItems = [
-    { href: '#home', label: 'Home' },
+    // { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
+    { href: '#skills', label: 'Skills' },
     { href: '#education', label: 'Education' },
     { href: '#journey', label: 'Journey' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' }
+    { href: '#project', label: 'Project' },
+    { href: '#contact', label: 'Contact' },
 ]
 
 const toggleMobileMenu = () => {

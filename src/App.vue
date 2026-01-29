@@ -1,5 +1,6 @@
 <script setup>
 import About from './components/About.vue';
+import Contact from './components/Contact.vue';
 import Education from './components/Education.vue';
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
@@ -15,10 +16,11 @@ import Skills from './components/Skills.vue';
     <Header />
     <Hero />
     <About />
+    <Skills />
     <Education />
     <Journey />
-    <Skills />
     <Project />
+    <Contact />
     <Footer />
   </div>
 </template>
