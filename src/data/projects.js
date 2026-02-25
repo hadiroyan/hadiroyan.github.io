@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "RetailHub",
+    description:
+      "Multi-store retail management built with Quarkus, Vue.js and PostgreSQL.",
+    image: "/images/projects/retailhub-v2.png",
+    tags: ["Quarkus", "Vue.js 3", "JWT", "PostgreSQL"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/hadiroyan/retailhub",
+  },
+  {
+    title: "Planet Explorer App",
+    description:
+      "Planet Explorer Mobile App with Flutter and BLoC as state management",
+    image: "/images/projects/planet-explorer.png",
+    tags: ["Flutter", "BLoC", "Dart"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/hadiroyan/planet_explorer_app",
+  },
+  {
     title: "Spring Vue Auth Demo",
     description:
       "Modern Spring Boot backend implementation secured with JWT & OAuth2 authentication with Vue.js 3",
@@ -35,13 +53,13 @@ export const projects = [
     demoUrl: "#",
     githubUrl: "https://github.com/hadiroyan/warung-pintar",
   },
-  {
-    title: "Open Music API",
-    description:
-      "Full-featured music backend utilizing message queuing for enhanced latency performance",
-    image: "/images/projects/project-openmusic-api.png",
-    tags: ["Node.js", "PostgreSQL", "REDIS", "RabbitMQ"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/hadiroyan/openmusic-api-back-end",
-  },
+  // {
+  //   title: "Open Music API",
+  //   description:
+  //     "Full-featured music backend utilizing message queuing for enhanced latency performance",
+  //   image: "/images/projects/project-openmusic-api.png",
+  //   tags: ["Node.js", "PostgreSQL", "REDIS", "RabbitMQ"],
+  //   demoUrl: "#",
+  //   githubUrl: "https://github.com/hadiroyan/openmusic-api-back-end",
+  // },
 ];
